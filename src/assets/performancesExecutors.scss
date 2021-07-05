@@ -1,0 +1,23 @@
+.responsible {
+    display: flex;
+    width: 1210px;
+    margin: 109px auto 68px auto;
+
+    .responsible__img {
+        display: block;
+        margin-right: 71px;
+    }
+}
+
+.responsible-description {
+    padding: 95px 0 0 0;
+
+    .responsible-description__task {
+        margin: 0 0 59px 0;
+        font-family: BatangChe;
+    }
+
+    .responsible-description__initials {
+        margin: 0;
+    }
+}

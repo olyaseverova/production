@@ -1,0 +1,67 @@
+.stagings {
+    width: 1233px;
+    margin: 31px auto 105px auto;
+}
+
+.stagings-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    .stagings-list__item {
+        width: 598px;
+        height: 289px;
+        text-align: center;
+        
+        &:first-of-type {
+            margin: 0 0 31px 317px;
+        }
+        
+        .stagings-list__link {
+            display: block;
+            padding: 108px 60px;
+            transition: 0.3s ease;
+            background-image: url("../img/staging-1.png");
+            
+            &:hover,
+            &:focus {
+                box-shadow: 10px 10px 30px $rgba-brown-04;
+                background: linear-gradient(0deg, $rgba-brown, $rgba-brown), url("../img/staging-1.png");
+            }
+
+            &:active {
+                background: linear-gradient(0deg, $rgba-brown-09, $rgba-brown-09), url("../img/staging-1.png");
+            }
+        }
+
+        &:nth-of-type(2) .stagings-list__link {
+            background-image: url("../img/staging-2.png");
+
+            &:hover,
+            &:focus {
+                box-shadow: 10px 10px 30px $rgba-brown-04;
+                background: linear-gradient(0deg, $rgba-brown, $rgba-brown), url("../img/staging-2.png");
+            }
+
+            &:active {
+                background: linear-gradient(0deg, $rgba-brown-09, $rgba-brown-09), url("../img/staging-2.png");
+            }
+        }
+        
+        &:nth-of-type(3) .stagings-list__link {
+            background-image: url("../img/staging-3.png");
+
+            &:hover,
+            &:focus {
+                box-shadow: 10px 10px 30px $rgba-brown-04;
+                background: linear-gradient(0deg, $rgba-brown, $rgba-brown), url("../img/staging-3.png");
+            }
+
+            &:active {
+                background: linear-gradient(0deg, $rgba-brown-09, $rgba-brown-09), url("../img/staging-3.png");
+            }
+        }
+    }
+}

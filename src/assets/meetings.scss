@@ -1,0 +1,216 @@
+.audio {
+    width: 1306px;
+    display: flex;
+    justify-content: space-between;
+    margin: 62px auto 96px auto;
+
+    .recording {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 492px;
+        height: 170px;
+        margin: 0 0 0 25px;
+    }
+
+    .recording__img {
+        display: block;
+        margin: 0 0 25px 0;
+    }
+
+    .recording__text {
+        margin: 5px 0 0 0;
+    }
+}
+
+.audio-player-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.play-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 156px;
+    margin: 0 auto;
+
+    .scrolling-button {
+        position: relative;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        margin: 15px 0 0 0;
+
+        border: none;
+        border-radius: 50%;
+        transition: 0.2s ease;
+
+        background-color: inherit;
+        background-position: 10px 50%;
+        background-repeat: no-repeat;
+        background-image: url("../img/play-audio.png");
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 26px;
+
+            top: 50%;
+            left: 85%;
+            transform: translate(-100%, -50%);
+            background-color: $light-grey;
+        }
+
+        &:first-of-type {
+            transform: rotate(180deg);
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $rgba-grey;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+
+.play-icon {
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin: 10px auto;
+
+    border: none;
+    border-radius: 50%;
+    transition: 0.2s ease;
+    background-color: $ocher;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 21px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-repeat: no-repeat;
+        background-image: url("../img/play-audio.png");
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 4px 4px 10px $rgba-dark-brown;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.stop-icon {
+    &::before {
+        display: none;
+    }
+}
+
+input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: $light-grey;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        rgba(0, 125, 181, 0.6) var(--buffered-width),
+        rgba(0, 125, 181, 0.2) var(--buffered-width)
+    );
+}
+input[type="range"]::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    width: var(--seek-before-width);
+    height: 3px;
+    background-color: #007db5;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    border: 1px solid #007db5;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: -7px 0 0 0;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background: #007db5;
+}
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        rgba(0, 125, 181, 0.6) var(--buffered-width),
+        rgba(0, 125, 181, 0.2) var(--buffered-width)
+    );
+}
+input[type="range"]::-moz-range-progress {
+    background-color: $rgba-brown;
+}
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+input[type="range"]::-moz-range-thumb {
+    box-sizing: content-box;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $light-grey;
+    cursor: pointer;
+}
+input[type="range"]:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: $rgba-brown;
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background-color: $grey;
+    border: solid transparent;
+    color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+    background-color: $rgba-brown;
+}
+
+.decryption {
+    width: 656px;
+    height: 818px;
+    padding: 79px 76px;
+    background-color: $ocher;
+    background-repeat: no-repeat;
+    background-image: url("../img/decryption.png");
+}

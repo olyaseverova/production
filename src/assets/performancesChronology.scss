@@ -1,0 +1,58 @@
+.dramatisations-list {
+    width: 1210px;
+    margin: 88px auto 112px auto;
+    padding: 0 197px 0 0;
+
+    .dramatisations-list__item {
+        margin-bottom: 28px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .dramatisation-list__number {
+            height: 83px;
+            padding: 25px 44px;
+            font-family: BatangChe;
+            background-color: $ocher;
+        }
+
+        .dramatisation-list__container {
+            display: flex;
+            padding: 30px 44px 133px 44px;
+            border: 3px solid $ocher;
+
+            .characters-list {
+                width: 300px;
+
+                .characters-list__item {
+                    margin: 0 30px 0 0;
+
+                    &:nth-of-type(even) {
+                        margin-right: 0;
+                    }
+
+                    .characters-list__button {
+                        padding: 7px 19px;
+                        font-size: 18px;
+                    }
+
+                    .character_active {
+                        .characters-list__close {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dramatisation-list__text {
+            display: block;
+            width: 609px;
+        }
+    }
+}

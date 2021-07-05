@@ -1,0 +1,16 @@
+[
+    { "to": "/meetings", "link": "Совещания"
+    },
+    {
+      "to": "/vault",
+      "link": "Постановки",
+      "subparagraphs": [
+            { "to": "/performancesChronology", "link": "Постановки в хронологии совещания"
+            },
+            { "to": "/performancesStructured", "link": "Постановки  структурированные"
+            },
+            { "to": "/performancesExecutors", "link": "Постановки по ответственным исполнителям"
+            }
+        ]
+    }
+]

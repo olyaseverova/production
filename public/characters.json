@@ -1,0 +1,18 @@
+[
+    {
+        "status": true,
+        "button": "Персонаж"
+    },
+    {
+        "status": false,
+        "button": "Общие"
+    },
+    {
+        "status": true,
+        "button": "Другой тег"
+    },
+    {
+        "status": false,
+        "button": "Другой текст"
+    }
+]

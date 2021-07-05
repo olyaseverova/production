@@ -1,0 +1,36 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$ocher: #F1E3C2;
+$grey: #393939;
+$brown: #60392C;
+$light-grey: #C4C4C4;
+
+$rgba-brown: rgba(96, 57, 44, 0.7);
+$rgba-brown-04: rgba(96, 57, 44, 0.4);
+$rgba-brown-09: rgba(96, 57, 44, 0.9);
+$rgba-dark-brown: rgba(0, 0, 0, 0.15);
+$rgba-ocher: rgba(241, 227, 194, 0.5);
+$rgba-grey: rgba(96, 57, 44, 0.2);
+
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%flex-space {
+	display: flex;
+	justify-content: space-between;
+}
+
+%wrap-space {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+%flex-wrap-space {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+$desktop-width: 1440px;

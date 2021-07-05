@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+body {
+  min-width: 375px;
+
+  margin: 0;
+  padding: 0;
+
+  color: $grey;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.ocher {
+  color: $ocher;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.heading {
+  margin: 0;
+  font-size: 54px;
+  line-height: 62px;
+  font-weight: 400;
+  font-family: BatangChe;
+}

@@ -1,0 +1,48 @@
+.home {
+    display: flex;
+}
+
+.home__img {
+    height: 100vh;
+}
+
+.home-main {
+    padding: 10% 0 0 10%;
+
+    .heading {
+        width: 470px;
+        margin-bottom: 160px;
+    }
+
+    .home-main__button {
+        position: relative;
+        display: block;
+        width: 556px;
+        height: 58px;
+        padding: 12px 0 0 0;
+
+        font-size: 30px;
+        text-align: center;
+        background-color: $ocher;
+
+        &:hover::after {
+            position: absolute;
+            content: "";
+
+            width: inherit;
+            height: inherit;
+
+            top: 12px;
+            left: 13px;
+            border: 3px solid $ocher;
+        }
+
+        &:active {
+            font-weight: 700;
+        }
+
+        &:focus {
+            outline: 3px solid $rgba-brown;
+        }
+    }
+}
